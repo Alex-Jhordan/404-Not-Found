@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --color1: #333333;
+    --color2: #ffffff;
+    --color3: #bdbdbd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+header {
+    padding: clamp(1.25rem, 2.8vw, 2.5rem) clamp(0.875rem, 5.4vw, 4.813rem);
+    font-size: 1.5rem;
+    color: var(--color1);
+    text-transform: uppercase;
+    max-width: 1440px;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1440px;
+    margin: auto;
+}
+
+.image {
+    padding: clamp(2.75rem, 5.4vw, 4.813rem);
+}
+
+img {
+    width: 100%;
+}
+
+.info {
+    font-family: 'Space Mono', monospace;
+    padding: clamp(1rem, 5.4vw, 4.813rem) 0.063rem 5.625rem 1.5rem;
+    color: var(--color1);
+}
+
+.title {
+    font-size: clamp(2.875rem, 4.5vw, 4rem);
+    margin-top: 0;
+    margin-bottom: 1.875rem;
+    line-height: 4.443rem;
+}
+
+.text {
+    font-size: clamp(1.063rem, 2vw, 1.438rem);
+    margin-bottom: 4.125rem;
+    padding-right: 1.438rem;
+    line-height: 1.666rem;
+    max-width: 400px;
+}
+
+.link {
+    display: inline-block;
+    padding: 1.5rem 2.688rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.296rem;
+    text-transform: uppercase; 
+    background-color: #333333;
+    color: var(--color2);
+    text-decoration: none;
+    transition: background-color 500ms;
+}
+
+.link:hover {
+    background-color: #111111;
+}
+
+footer {
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--color3);
+    text-align: center;
+    line-height: 1.067rem;
+    max-width: 1440px;
+    margin: auto;
+}
+
+footer a {
+    color: var(--color1);
+    transition: color 500ms;
+}
+
+footer a:hover {
+    color: #111111;
+}
